@@ -2,6 +2,25 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "rust: cargo build workspace",
+			"type": "cargo",
+			"command": "build",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--workspace",
+				"--verbose"
+			],
+			"group": "build",
+			"presentation": {
+				"reveal": "always",  // Terminal パネルを必ず開く
+				"clear": true,       // 実行前に Terminal をクリア
+			},
+			"options": {
+			}
+		},
+		{
 			"label": "rust: cargo run p2",
 			"type": "cargo",
 			"command": "run",
