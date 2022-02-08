@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    
+    // not update issue: https://github.com/microsoft/vscode-remote-release/issues/6154
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'p1' in 'rust_project'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "-p",
+                    "p1",
+                    "--verbose"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 'p2' in 'rust_project'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "-p",
+                    "p2",
+                    "--verbose"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests 'p1' in executable 'rust_project'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "-p",
+                    "p1",
+                    "--no-run",
+                    "--verbose"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
