@@ -5,6 +5,6 @@
 use p1::my;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, world! p1");
     my::hey();
 }

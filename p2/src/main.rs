@@ -3,5 +3,5 @@ use p1::my;
 fn main() {
 
     my::hey();
-    println!("Hello, world!");
+    println!("Hello, world! p2");
 }
